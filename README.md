@@ -1,19 +1,53 @@
-# Raylib
-This repo is a simple template to help you get your [raylib](https://www.raylib.com/index.html) C/C++ project up and running using CMake and VSCode. No need to download raylib, just follow the instructions below and it will set everything up for you. 
+# Conway's Game of Life in 3D with C++ and Raylib
 
-This system uses CMake and therefore the file type (.c or .cpp) dictates which compiler is used. By default this project is set to C due to raylib being a C library but can be changed to C++ by renaming `main.c` to `main.cpp`. Make sure you update your [CMakeList.txt with the new file name](../README.md#adding-new-files).
+## Introduction
 
-This repo is using the [basic window](https://github.com/raysan5/raylib/blob/master/examples/core/core_basic_window.c) example provided in the [raylib repo](https://github.com/raysan5/raylib) as a starting point.  
+This project implements Conway's Game of Life in a 3D space using C++ and the Raylib graphics library. It provides a visual representation of the cellular automaton's evolution, allowing you to explore various initial configurations and witness the fascinating patterns emerge.
 
-## Compiler, Build and VSCode
+## Features
 
-To get this program up and running just follow the instructions in the [Main README](../README.md) for this repo. 
+- **3D Grid:** Cells reside in a 3D grid, enabling more complex and visually engaging simulations compared to the traditional 2D version.
+- **Raylib Integration:** Leverages Raylib for efficient rendering of the 3D grid and user interaction.
+- **Clear Visuals:** Employs distinct colors (e.g., white for alive, black for dead) for easy visualization of cell states.
+- **Real-Time Simulation:** Runs the simulation in real-time, allowing you to observe the game's progression.
+- **Pause/Resume Control:** Provides the ability to pause and resume the simulation at your convenience for closer inspection.
+- **Camera Controls:** Navigate the 3D grid using arrow keys or WASD for rotation.
+- **Potential for Further Enhancements:** The codebase is well-structured, making it adaptable for adding features like:
+    - User-defined initial configurations (e.g., through mouse interaction).
+    - Pre-set patterns to explore well-known Game of Life structures.
 
-Note: The configuring CMake step may take a couple of minutes as it needs to download the raylib repo. 
+## Getting Started
 
-Once you have followed the steps you should and run the program, you should see a window displaying `"Congrats! You created your first window!"`.   
+1. **Prerequisites:**
+   - C++ compiler (e.g., GCC, Clang)
+   - CMake
+   - Raylib library ([https://www.raylib.com/](https://www.raylib.com/))
+   **Compilation:**
+   - `cd build`
+   - `cmake ..`
+   - `make`
+2. **Execution:**
+   - Navigate to the project directory in your terminal.
+   - Run the compiled executable (`./build/Conway3D`)
 
-You are now setup to start your raylib project!
+**Controls**
 
-## End Note
-This repo is designed to help people new to C/C++ get started. I'm still fairly new to CMake, C++ and Open Source project. I would love any feedback, so please raise an Issue on the Github page if you have any! If you have any issues with the steps in this repo, just create an issue on Github and I'll do my best to help!
+- Arrow keys or WASD: Rotate the camera view.
+- Space bar: Pause/resume the simulation.
+- Escape key: Exit the application.
+
+**Disclaimer**
+
+This project is for educational and entertainment purposes only. While it strives for accuracy in representing the Game of Life rules, potential edge cases or bugs might exist.
+
+**Contribution**
+
+Feel free to contribute to this project by:
+
+- Reporting any issues you encounter.
+- Suggesting improvements or new features.
+- Submitting pull requests with your modifications.
+
+**Enjoy exploring the captivating world of Conway's Game of Life in 3D!**
+
+This revised version removes the compilation and customization sections, as requested. It also incorporates camera controls as an existing feature.
