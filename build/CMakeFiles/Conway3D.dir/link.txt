@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Conway3D.dir/src/main.cpp.o CMakeFiles/Conway3D.dir/src/conway.cpp.o -o Conway3D  _deps/raylib-build/raylib/libraylib.a -lm -lpthread /usr/lib/x86_64-linux-gnu/libOpenGL.so /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libGLU.so _deps/raylib-build/raylib/external/glfw/src/libglfw3.a /usr/lib/x86_64-linux-gnu/librt.a -lm -ldl 
